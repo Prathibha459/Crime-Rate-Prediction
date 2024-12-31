@@ -1,0 +1,22 @@
+---
+name: CrimeDataProcessor
+description: Component to process crime data
+type: PythonScript
+version: 1.0.0
+inputs:
+  - name: crime_data_input
+    description: Path to crime dataset
+    type: Path
+    value: crime.csv
+outputs:
+  - name: processed_data_output
+    description: Path to processed data
+    type: Path
+    value: processed_data.csv
+environment:
+  python: "3.8"
+  dependencies:
+    - numpy
+    - pandas
+    - selenium
+    - flask

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crime Data</title>
+</head>
+<body>
+    <h1>Crime Data</h1>
+    {% for key, value in crime_data.items() %}
+        <p>{{ key }}: {{ value }}</p>
+    {% endfor %}
+</body>
+</html>
